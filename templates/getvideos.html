@@ -1,0 +1,34 @@
+{% extends 'header.html' %}
+{% block content %}
+
+<section class="w3l-content-6 py-5" id="why">
+    <div class="container py-lg-5">
+      <div class="row">
+        <div class="col-lg-4 content-6-left">
+          <h6 class="sub-title">Date and Time</h6>
+          <h3 class="hny-title">Get Videos</h3>
+        </div>
+        <div class="col-lg-8 content-6-right mt-lg-0 mt-4">
+          <div class="form-inner-cont">
+              <form action="/getvideos" method="post" class="signin-form">
+                <div class="form-input">
+                  <label>Name</label>
+                  <input type="date" name="date" placeholder="" />
+                </div>
+                <div class="form-input">
+                  <label>Name</label>
+                  <input type="time" name="time" placeholder="" />
+                </div>
+
+                <div class="form-submit text-right">
+                    <button type="submit" class="btn btn-style btn-primary">Get Videos</button>
+                  </div>
+              </form>
+            </div>
+        </div>
+
+      </div>
+    </div>
+</section>
+
+{% endblock %}

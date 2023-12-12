@@ -1,0 +1,31 @@
+{% extends 'header.html'%}
+{% block content %}
+<!-- banner -->
+<div class="form-group">
+	<!-- Indicators -->
+	<div class="container">
+		<h3 class="mt-5">Register face</h3>
+		<form action="/registerperson" method="post" class="signin-form mt-3">
+			<div class="form-group">
+				<label for="w3lName">Person Name</label>
+				<input type="text" name="username" class="form-control" id="exampleInputEmail1" placeholder />
+			</div>
+			<div class="form-group">
+				<label for="w3lSender">Job Profile*</label>
+				<input type="text" name="jobprofile" class="form-control" id="exampleInputEmail1" placeholder=""
+					required />
+			</div>
+			<div class="form-group">
+				<label for="w3lSender">Date*</label>
+				<input type="date" name="joindate" class="form-control" id="exampleInputEmail1" placeholder=""
+					required />
+			</div>
+			<div class="form-submit text-right">
+				<button type="submit" class="btn btn-style btn-primary">Submit Message</button>
+			</div>
+		</form>
+	</div>
+	<!-- The Modal -->
+</div>
+<!--//banner -->
+{% endblock %}
